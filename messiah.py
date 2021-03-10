@@ -12,7 +12,7 @@ def find_help(query):
     if len(possible_assistance) != 0:
         click.echo("Results\n")
         for item in possible_assistance:
-            click.echo(item)
+            click.echo(f'{item} \n')
 
 
 if __name__ == '__main__':

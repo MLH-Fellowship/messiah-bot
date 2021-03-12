@@ -8,8 +8,8 @@ class MessiahClient(discord.Client):
 
     async def on_message(self, message: discord.Message):
         if is_bio_declaration(message.content):
-            bio = get_bio(message.content)
+            bio = get_bio(message)
             print(
                 f"Received the following biography: {bio} from {message.author}")
-        if is_help_request(message.content):
+        if is_help_request(message):
             pass

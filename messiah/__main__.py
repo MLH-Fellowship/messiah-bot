@@ -1,8 +1,8 @@
-from messiah import MessiahClient
 import os
 
+from messiah import MessiahClient
 
 if __name__ == '__main__':
     client = MessiahClient()
-    # noinspection SpellCheckingInspection
-    client.run(os.getenv("messiah_bot"))
+    bot_token = os.getenv("messiah_bot")
+    client.run(bot_token)
